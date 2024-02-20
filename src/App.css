@@ -1,14 +1,11 @@
-* {
-    box-sizing: border-box;
-}
 
 .App {
-    background-color: rgb(255, 255, 255);
+    background-color: var(--theme-white);
 }
 
 
 ul {
-    border: 5px solid rgb(220, 220, 220);
+    border: 2px solid rgb(215, 215, 215);
     max-width: 80%;
     margin: 10px auto;
     padding-bottom: 15px;
@@ -20,20 +17,20 @@ li {
     align-items: center;
     justify-content: space-between;
     list-style: none;
-    border: 2px solid rgb(220, 220, 220);
+    border: none;
     border-radius: 5px;
     margin: 20px 30px;
-    box-shadow: grey 2px 2px;
     padding: 15px 20px;
     font-size: 23px;
 }
 
 h1 {
     text-align: center;
+    margin-top: 30px;
 }
 
 .delete {
-    background-color: rgb(255, 255, 255);
+    background-color: var(--theme-white);
     color: rgb(0, 0, 0);
     border-radius: 10px;
     padding: 10px 20px;
@@ -43,23 +40,29 @@ h1 {
 
 .delete:hover {
     background-color: black;
-    color: white;
+    color: var(--theme-white);
 }
 
 .toggle {
-    background-color: bisque;
+    background-color: rgb(255, 255, 255);
     color: rgb(0, 0, 0);
     border-radius: 5px;
-
+    height: 30px;
+    width: 80px;
+    margin-top: 20px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
+    border: none;
+    font-size: 15px;
 
 }
 
 .completed {
-    box-shadow: green 2px 2px;
+    box-shadow: green 1px 2px 5px;
 }
 
 .incomplete {
-    box-shadow: rgb(228, 17, 17) 2px 2px;
+    box-shadow: rgb(228, 17, 17) 1px 2px 5px;
 }
 
 .logo {
@@ -67,7 +70,7 @@ h1 {
 }
 
 header {
-    background-color: rgb(255, 255, 255);
+    background-color: var(--theme-white);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -84,16 +87,23 @@ header {
 }
 
 .box {
-    max-width: 600px;
+    max-width: 700px;
     margin: 20px auto;
+
 }
 
 .success {
-    background-color: rgb(133, 249, 133);
+    background-color: rgb(184, 254, 184);
+    text-align: center;
+    padding: 10px 10px;
+    box-shadow: rgb(172, 172, 172) 1px 3px 4px;
 }
 
 .warning {
-    background-color: rgb(249, 177, 126);
+    background-color: rgb(255, 205, 169);
+    text-align: center;
+    padding: 10px 10px;
+    box-shadow: rgb(172, 172, 172) 1px 3px 4px;
 }
 
 .alert {
@@ -102,6 +112,17 @@ header {
 
 .hidden {
     display: none;
+}
+
+.trigger {
+    border: none;
+    color: var(--theme-white);
+    background-color: rgb(11, 35, 166);
+    border-radius: 5px;
+    width: 60px;
+    height: 25px;
+    font-size: 15px;
+    margin: 15px 0 10px 0;
 }
 
 

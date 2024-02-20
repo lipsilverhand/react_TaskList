@@ -7,7 +7,7 @@ const App = () => {
     return (
         <div className='App'>
             <Header />
-            <TaskList title="Random" subtitle="Test"/>
+            <TaskList />
         </div>
     )
 }
