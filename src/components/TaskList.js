@@ -17,22 +17,22 @@ export const TaskList = () => {
     const [show, setShow] = useState(true)
 
   return (
-    <div>
+    <div className='tasklist'>
         <h1>Task List</h1>
         <ul>
-            <button className='toggle' onClick={() => setShow(!show)}>Toggle</button> 
+            <button className='toggle' onClick={() => setShow(!show)}>{show ? "^" : "v"}</button> 
             { show && tasks.map((task) => (
                 <TaskCard task={task} handleDelete={handleDelete}/>
             ))}
         </ul>
         <BoxCard result="success">
-            <p className='title'>Lorem ipsum dolor sit amet.</p>
-            <p className='description'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <p className='title'>Offer Notification</p>
+            <p className='description'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
         </BoxCard>        
         
         <BoxCard result="warning">
-            <p className='title'>Lorem ipsum dolor sit .</p>
-            <p className='description'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip!</p>
+            <p className='title'>Cookie Notification</p>
+            <p className='description'>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip!</p>
             
         </BoxCard>
     </div>

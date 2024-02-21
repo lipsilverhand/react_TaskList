@@ -1,8 +1,8 @@
-export const TaskCard = (props) => {
+export const TaskCard = ({task, handleDelete}) => {
   return (
-    <li key={props.task.id} className={props.task.complete ? "completed" : "incomplete"}>
-        <span>{props.task.id} - {props.task.name}</span>
-        <button onClick={() => props.handleDelete(props.task.id)} className='delete'>Delete</button>
+    <li key={task.id} className={task.complete ? "completed" : "incomplete"}>
+        <span>{task.id} - {task.name}</span>
+        <button onClick={() => handleDelete(task.id)} className='delete'>Delete</button>
     </li>
   )
 }
